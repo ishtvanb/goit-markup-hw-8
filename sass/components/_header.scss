@@ -1,0 +1,22 @@
+/* Header */
+
+.header {
+    border-bottom: 1px solid #ececec;
+
+    .header-container {
+    display: flex;
+    justify-content: space-between ;
+    }
+
+    .header-link {
+    line-height: 1.14;
+    }
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}

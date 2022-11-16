@@ -1,0 +1,46 @@
+/* Section-team */
+
+.section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+.section-team-list.list {
+  display: flex;
+  gap: 30px;
+}
+
+.section-list__item {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
+}
+
+.section-list__member {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+}
+
+.section-list__role {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+
+
