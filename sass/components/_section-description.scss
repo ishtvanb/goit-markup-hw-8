@@ -5,16 +5,14 @@
     margin: 0 auto;
     width: 100%;
     
-
     @media screen and (max-width: 768px) {
-        display: block;
+        display: none;
     }
-
 
 }
 
 .section-description {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
 }
 
 .section-description-list.list {
