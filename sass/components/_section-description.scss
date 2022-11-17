@@ -1,5 +1,18 @@
 /* Section-description */
 
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+
+}
+
 .section-description {
     padding-bottom: 94px;
 }

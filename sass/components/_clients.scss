@@ -1,12 +1,29 @@
 /* Clients */
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+}
 
 .clients {
     display: block;
 }
 
 .section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 24px;
     line-height: 1.17;
     text-align: center;
@@ -15,15 +32,15 @@
 
 .logo-list.list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
 }
 
 .logo-list__item {
-    width: 170px;
-    height: 92px;
-    margin-right: 30px;
+    width: calc((100% - 60px) / 2);
+    
 }
 
 .logo-list__link {
