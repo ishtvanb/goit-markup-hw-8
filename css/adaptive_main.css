@@ -359,17 +359,21 @@ address {
   box-sizing: border-box;
 }
 
-.container-resp {
+.container {
   padding: 0 15px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    display: block;
+  }
 }
 
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -389,11 +393,6 @@ address {
   color: var(--white-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container-resp {
-    display: block;
-  }
-}
 /* Button */
 .button {
   margin-top: 0;
@@ -534,7 +533,7 @@ address {
 }
 @media screen and (max-width: 768px) {
   .container {
-    display: none;
+    display: block;
   }
 }
 
@@ -586,7 +585,6 @@ address {
   }
 }
 .section-team {
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -681,16 +679,6 @@ address {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -1113,12 +1101,22 @@ address {
 }
 
 /* Button-filter */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    display: block;
+  }
+}
+
 .button-filter {
   display: inline-block;
   min-width: 130px;
   padding: 6px 22px;
-  margin-left: auto;
-  margin-right: auto;
   font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1147,12 +1145,13 @@ address {
 
 .button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 .button-list__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .button-list__item:last-child {
@@ -1160,18 +1159,27 @@ address {
 }
 
 /* Section-portfolio */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    display: block;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .section-portfolio-list.list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 0;
+  display: block;
 }
 
 .section-portfolio-list__title {
@@ -1212,7 +1220,9 @@ address {
 }
 
 .section-portfolio-list__item {
-  width: calc((100% - 60px) / 3);
+  width: 450px;
+  height: auto;
+  margin-bottom: 30px;
   transition: box-shadow 250ms var(--transition-timing-function);
 }
 .section-portfolio-list__item:hover .overlay-text {
@@ -1229,7 +1239,7 @@ address {
 }
 
 .description {
-  width: 370px;
+  width: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

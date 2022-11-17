@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
-.container-resp {
+.container {
     padding: 0 15px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     width: 100%;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        display: block;
+    }
+
 }
 
 .hero {
     max-width: 1600px;
-    height: 600px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -38,8 +42,3 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .container-resp {
-        display: block;
-    }
-}
