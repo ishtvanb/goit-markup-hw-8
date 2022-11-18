@@ -55,13 +55,18 @@
     justify-content: center;
 }
 
+.footer-wrap {
+    display: block;
+}
+
 .logo-address {
-    display: flex;
-        
+    display: block;
+    text-align: center;
+    padding-top: 57px;
 }
 
 .address {
-    margin-top: 108px;
+    margin-top: 20px;
     margin-bottom: 60px;
     justify-items: center;
 }
@@ -122,8 +127,6 @@
 
 .form {
     display: block;
-    width: 570px;
-    height: 86px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
