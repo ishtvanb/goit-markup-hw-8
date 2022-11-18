@@ -7,14 +7,15 @@
     }
 
     max-width: 1600px;
-    height: auto;
+    height: 400px;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-repeat: no-repeat;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero/);
+        url(../images/hero/img-hero-1x.jpg);
     background-color: var(--primary-background-color);
 
     &-title {
@@ -29,3 +30,36 @@
     }
 }
 
+.button {
+    margin-top: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    &--primary {
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        transition: background-color 250ms var(--transition-timing-function),
+            color 250ms var(--transition-timing-function);
+    }
+
+    &--secondary {
+        color: var(--primary-text-color);
+        background-color: var(--secondary-background-color);
+        transition: background-color 250ms var(--transition-timing-function),
+            color 250ms var(--transition-timing-function);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--background-color-active);
+    }
+}
