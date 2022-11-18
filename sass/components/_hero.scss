@@ -8,12 +8,11 @@
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
+    display: block;
 
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-        display: block;
+    @media screen and (min-width: 320px) {
+        width: 480px;
     }
-
 }
 
 .hero {
@@ -33,9 +32,9 @@
     &-title {
     max-width: 696px;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     margin: 0 auto 30px;
-    line-height: 1.36;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);

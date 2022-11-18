@@ -363,11 +363,11 @@ address {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
+  display: block;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
-    display: block;
+    width: 480px;
   }
 }
 
@@ -385,9 +385,9 @@ address {
 .hero-title {
   max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   margin: 0 auto 30px;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
@@ -470,22 +470,13 @@ address {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
+    display: block;
   }
 }
 
 .section-features {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 56px;
 }
 
 .section-features-list.list {
@@ -530,10 +521,11 @@ address {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
+  display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
-    display: block;
+    width: 768px;
   }
 }
 
@@ -577,22 +569,33 @@ address {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  display: block;
 }
-
-@media screen and (width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    display: block;
+    width: 480px;
   }
 }
+
 .section-team {
-  line-height: 1.14;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
   letter-spacing: 0.03em;
+  line-height: 1.18;
+  padding-bottom: 60px;
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
 }
 
-.section-team-list.list {
-  display: block;
+.section-team-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+  color: var(--primary-text-color);
 }
 
 .section-list__item {
@@ -680,35 +683,42 @@ address {
   margin: 0 auto;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
-}
-
-.clients {
-  display: block;
 }
 
 .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  font-size: 24px;
-  line-height: 1.17;
+}
+
+.clients-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
   text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.18;
   color: var(--primary-text-color);
 }
 
 .logo-list.list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
-  justify-content: center;
+  margin-top: 0;
+  justify-content: space-between;
 }
 
 .logo-list__item {
-  width: calc((100% - 60px) / 2);
+  width: 210px;
+  height: 92px;
+  margin-bottom: 30px;
+}
+
+.logo-list__item:nth-child(n+5) {
+  margin-bottom: 0;
 }
 
 .logo-list__link {
