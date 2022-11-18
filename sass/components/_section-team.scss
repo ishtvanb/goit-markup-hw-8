@@ -1,19 +1,10 @@
 /* Section-team */
 
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    display: block;
-
-@media screen and (min-width: 480px) {
-    width: 480px;
-}
-}
-
 .section-team {
+    display: block;
+    @media screen and (min-width: 480px) {
+    width: 480px;
+    }
     font-weight: 700;
     font-size: 28px;
     text-align: center;

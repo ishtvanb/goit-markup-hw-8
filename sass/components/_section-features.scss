@@ -1,19 +1,12 @@
 /* Section-features */
 
-/* Section-features */
-
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-        display: block;
-    }
-}
+/* Section-features */  
 
 .section-features {
+    display: block;
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    }
     padding-top: 60px;
     padding-bottom: 56px;
 }

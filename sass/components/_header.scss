@@ -1,6 +1,10 @@
 /* Header */
 
 .header {
+    display: block;
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    }
     border-bottom: 1px solid #ececec;
 
     .header-container {

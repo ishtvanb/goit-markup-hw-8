@@ -1,17 +1,11 @@
-/* Section-portfolio */
-
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-        display: block;
-    }
-}
+/* Section-portfolio */  
 
 .section {
+    display: block;
+    @media screen and (min-width: 480px) {
+    max-width: 480px;    
+    }
+    
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 0;

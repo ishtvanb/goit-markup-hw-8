@@ -1,18 +1,10 @@
 /* Button-filter */
 
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-        display: block;
-    }
-}
-
 .button-filter {
-    display: inline-block;
+    display: block;
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    }
     min-width: 130px;
     padding: 6px 22px;
     font-family: "roboto", sans-serif;

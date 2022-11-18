@@ -1,17 +1,13 @@
 /* Clients */
-.container {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 100%;
-
-    @media screen and (min-width: 480px) {
-            width: 480px;
-    }
-}
 
 .section-clients {
+    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
+    
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    }
 }
 
 .clients-title {
