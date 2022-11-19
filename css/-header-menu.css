@@ -1,0 +1,88 @@
+/* Header-menu */
+@media screen and (min-width: 480px) {
+  .header-menu {
+    max-width: 480px;
+    display: block;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+
+.logo.link {
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 331px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.mobile-container {
+  position: relative;
+  padding: 48px 40px;
+}
+
+.mobile-menu {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1;
+  background-color: var(--white-color);
+}
+
+.mobile-nav {
+  display: block;
+}
+
+.mobile-nav-list .list {
+  display: block;
+}
+
+.mobile-nav-list__item {
+  margin-bottom: 32px;
+}
+
+.mobile-connect-list .list {
+  display: block;
+}
+
+.mobile-connect-list__item {
+  margin-bottom: 32px;
+}
+
+.socialnet-list-mobile .list {
+  display: flex;
+}
+
+.socialnet-list-mobile__item {
+  margin-right: 20px;
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}/*# sourceMappingURL=-header-menu.css.map */

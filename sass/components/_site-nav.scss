@@ -1,12 +1,14 @@
 /* Site-nav */
 
 .main-nav {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    display: none;
+    }
 }
 
 .site-nav-list {
-    display: flex;
+    display: none;
     align-items: center;
     font-weight: 500;
     font-size: 14px;

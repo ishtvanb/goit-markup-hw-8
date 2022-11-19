@@ -1,8 +1,13 @@
 /* Link-current */
 
 .link-current {
+    @media screen and (min-width: 480px) {
+    max-width: 480px;
+    
+    display: none;
     position: relative;
     padding: 32px 0;
+}
 }
 
 .link.current::after {
