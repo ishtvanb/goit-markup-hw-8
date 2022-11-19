@@ -242,14 +242,6 @@ address {
   }
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .menu-button {
   display: inline-flex;
   margin: 0;
