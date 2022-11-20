@@ -219,15 +219,14 @@ address {
 .header {
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 480px) {
-  .header {
-    max-width: 480px;
-    display: none;
-  }
-}
 
 .header-container {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .header-container {
+    max-width: 480px;
+  }
 }
 
 .header-link {
@@ -235,24 +234,32 @@ address {
 }
 
 /* Header-menu */
+.header-menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
+}
 @media screen and (min-width: 480px) {
   .header-menu {
     max-width: 480px;
-    display: block;
   }
 }
 
 .menu-button {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
   display: inline-flex;
-  margin: 0;
   padding: 0;
   width: 40px;
   height: 40px;
   background: transparent;
+  border: none;
 }
 
 .logo.link {
-  padding: 16px 331px 16px 15px;
+  margin-left: 15px;
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -267,6 +274,8 @@ address {
 }
 
 .mobile-menu {
+  position: fixed;
+  top: 0;
   display: block;
   position: relative;
   width: 100vw;
@@ -275,16 +284,18 @@ address {
   background-color: var(--white-color);
 }
 
-.mobile-nav {
-  display: block;
-}
-
 .mobile-nav-list .list {
-  display: block;
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .mobile-nav-list__item {
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .mobile-connect-list .list {
@@ -295,8 +306,13 @@ address {
   margin-bottom: 32px;
 }
 
-.socialnet-list-mobile .list {
+.socialnet-list-mobile.list {
   display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .socialnet-list-mobile__item {
@@ -306,7 +322,7 @@ address {
 .button-close {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 60px;
   display: inline-flex;
   margin: 0;
   padding: 0;
