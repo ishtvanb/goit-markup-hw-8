@@ -1,15 +1,15 @@
 /* Header */
 
-.header {
-    border-bottom: 1px solid #ececec;
-    
-}
-
 .header-container {
     @media screen and (min-width: 480px) {
         max-width: 480px;
     }
     display: none;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+
 }
 
 .header-link {
