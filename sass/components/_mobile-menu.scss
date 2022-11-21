@@ -9,8 +9,8 @@
 
 .button-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -17%;
+    right: 5%;
     margin-top: 10px;
     margin-right: 25px;
     padding: 0;
@@ -37,6 +37,7 @@
 
 .mobile-menu.is-hidden {
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100vw;
     height: 100vw;
@@ -45,12 +46,13 @@
 }
 
 .mobile-nav-list.list {
-    margin-bottom: 64px;
+    margin-top: auto;
+    margin-bottom: 34px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .mobile-nav-list__item:not(:last-child) {
@@ -58,8 +60,17 @@
 }
 
 .mobile-nav-list__link {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     text-decoration: none;
+}
+
+.mobile-nav-list__link.current {
+    color: var(--accent-color);
+}
+
+.mobile-nav-list .link:hover,
+.mobile-nav-list .link:focus {
+    color: var(--accent-color);
 }
 
 .mobile-connect-list.list {
@@ -93,6 +104,7 @@
 .socialnet-list-mobile.list {
     display: flex;
     position: relative;
+    margin-bottom: auto;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
