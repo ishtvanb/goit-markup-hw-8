@@ -5,6 +5,11 @@
     max-width: 480px;
     }
     display: none;
+
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
+    }
+    display: flex;
 }
 
 .site-connect-list__item {
@@ -30,7 +35,6 @@
 .site-connect-list__link:focus {
     color: var(--accent-color);
 }
-
 
 .mailto-icon,
 .tell-icon {

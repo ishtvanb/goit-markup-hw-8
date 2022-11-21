@@ -5,7 +5,7 @@
             max-width: 480px;
         }
     position: relative;
-}
+    }
 
 .button-close {
     position: absolute;
@@ -37,22 +37,20 @@
 
 .mobile-menu.is-hidden {
     position: fixed;
-    z-index: 1;
     top: 0;
+    z-index: 1;
     width: 100vw;
     height: 100vw;
     padding: 48px 40px;
     background-color: var(--white-color);
-}
 
-.mobile-nav-list.list {
-    margin-top: auto;
-    margin-bottom: 34px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    > .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
 }
 
 .mobile-nav-list__item:not(:last-child) {
@@ -62,6 +60,11 @@
 .mobile-nav-list__link {
     margin-bottom: 12px;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 }
 
 .mobile-nav-list__link.current {
@@ -75,6 +78,9 @@
 
 .mobile-connect-list.list {
     margin-bottom: 64px;
+}
+
+.mobile-connect-list__link {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -82,18 +88,9 @@
     color: #2196F3;    
 }
 
-.mobile-connect-list__item {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: #2196F3;
-}
-
-.mobile-connect-list__item:last-child {
+.mobile-connect-list-mail__link {
     font-size: 24px;
     line-height: 1.17;
-    letter-spacing: 0.02em;
     color: #757575;
 }
 
@@ -101,10 +98,7 @@
     margin-bottom: 32px;
 }
 
-.socialnet-list-mobile.list {
-    display: flex;
-    position: relative;
-    margin-bottom: auto;
+.socialnet-list {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -112,15 +106,30 @@
     color: #2196F3;
 }
 
+.socialnet-list-mobile.list {
+    display: flex;
+    margin-bottom: auto;
+}
+
 .socialnet-list-mobile__item {
+    margin-right: 20px;  
+}
+
+.socialnet-list-mobile__item:not(:first-child) {
+    position: relative;
     margin-right: 20px;
 }
 
 .socialnet-list-mobile__item::after {
     content: "";
     position: absolute;
+    left: -22px;
+    top: 9px;
     width: 22px;
-    height: 0px;
+    height: 1px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
 }
+
+
+
