@@ -9,11 +9,8 @@
     padding-bottom: 56px;
 }
 
-.section-features-list.list {
-    width: 480px;
-}
-
 .section-features-list__item {
+    max-width: 450px;
     width: 100%;
 }
 
@@ -50,17 +47,10 @@
         max-width: 1200px;
     }
         display: flex;
-                gap: 30px;
-
-}
-
-.section-features-list.list {
-    
-    gap: 30px;
 }
 
 .section-features-list__item {
-    width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
 }
 
 .section-features__txt {
