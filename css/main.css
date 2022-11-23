@@ -282,7 +282,11 @@ address {
 
 /* Mobile-menu */
 .mobile-container {
-  position: relative;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .mobile-container {
@@ -292,8 +296,8 @@ address {
 
 .button-close {
   position: absolute;
-  top: -17%;
-  right: 5%;
+  top: 0%;
+  right: 0;
   margin-top: 10px;
   margin-right: 25px;
   padding: 0;
@@ -1019,19 +1023,34 @@ address {
   display: block;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
 }
 @media screen and (min-width: 480px) {
   .section-clients {
     max-width: 480px;
   }
 }
+
+.logo-list__item:not(:nth-child(n+5)) {
+  margin-bottom: 30px;
+}
+
+.logo-list__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.section-clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .section-clients {
     max-width: 768px;
   }
+}
+
+.logo-list__item {
+  flex-basis: calc((100% - 60px) / 4);
 }
 
 .clients-title {
@@ -1044,17 +1063,16 @@ address {
   color: var(--primary-text-color);
 }
 
-.logo-list__item:nth-child(n+5) {
-  margin-bottom: 0;
-}
-
 .logo-list.list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 @media screen and (min-width: 1200px) {
   .section-clients {
     max-width: 1200px;
@@ -1063,11 +1081,12 @@ address {
 
 .logo-list.list {
   display: flex;
-  gap: 30px;
 }
 
 .logo-list__item {
-  flex-basis: calc((100% - 180px) / 6);
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
 }
 
 .logo-list__link {
@@ -1351,6 +1370,7 @@ address {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
+  overflow-y: scroll;
 }
 @media screen and (min-width: 480px) {
   .backdrop {
@@ -1386,6 +1406,18 @@ address {
 }
 .modal-title {
   margin: 0 0 12px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 768px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    height: 609px;
+    width: 100%;
+  }
 }
 
 .close-button {
@@ -1476,6 +1508,17 @@ address {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
+  width: 370px;
+}
+@media screen and (min-width: 480px) {
+  .feedback {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feedback {
+    max-width: 768px;
+  }
 }
 .feedback-field {
   position: relative;
@@ -1561,10 +1604,15 @@ address {
 
 .checkbox-icon {
   position: absolute;
-  top: 12%;
+  top: 3%;
   left: 2%;
   width: 16px;
   height: 15px;
+}
+@media screen and (min-width: 768px) {
+  .checkbox-icon {
+    max-width: 768px;
+  }
 }
 
 .checkbox:checked + .agreement-icon {

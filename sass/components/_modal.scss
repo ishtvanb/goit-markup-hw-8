@@ -13,6 +13,8 @@
     opacity: 1;
     transition: opacity 250ms var(--transition-timing-function),
         visibility 250ms var(--transition-timing-function);
+    
+    overflow-y: scroll;
 
     &.is-hidden {
     opacity: 0;
@@ -46,7 +48,18 @@
     &-title {
     margin: 0 0 12px;
     }
-} 
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 450px;
+        height: 609px;
+        width: 100%;
+    } 
+}
 
 .close-button {
     position: absolute;
