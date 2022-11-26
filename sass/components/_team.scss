@@ -1,0 +1,80 @@
+.team {
+    background-color: $second-background;
+}
+
+.team__title {
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: $card-set-gap;
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+.team__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $card-set-gap;
+    }
+}
+
+.team__bloc {
+    display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    text-align: center;
+
+    background-color: $up-white-background;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - $card-set-gap) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 3 * $card-set-gap) / 4);
+    }
+}
+
+.team__items {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team__text {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: $color-text;
+}

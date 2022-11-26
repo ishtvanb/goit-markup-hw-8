@@ -1,0 +1,155 @@
+.form__label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    margin-bottom: 10px;
+
+    &--comment {
+        margin-bottom: 20px;
+    }
+}
+
+.form__titel {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+
+    letter-spacing: 0.01em;
+
+    color: $color-text;
+}
+
+.form__input {
+    padding: 11px 0px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color $time $time-function;
+
+    &:hover,
+    &:focus {
+        border-color: $activ;
+        fill: $activ;
+    }
+}
+
+.form__icon {
+    position: absolute;
+
+    height: 18px;
+    width: 18px;
+
+    bottom: 11px;
+    left: 12px;
+    fill: $color-title;
+
+    transition: fill $time $time-function;
+
+    .form__input:hover+&,
+    .form__input:focus+& {
+        border-color: $activ;
+        fill: $activ;
+    }
+}
+
+.textarea {
+    height: 120px;
+    resize: none;
+
+    padding: 12px 16px;
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+
+        @media screen and (max-width:1199px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
+    }
+
+}
+
+.form__button {
+    margin: 0 auto;
+
+    padding: 10px 52px;
+    min-width: 96px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $up-white-text;
+    background-color: $activ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color $time $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $activ-button;
+    }
+}
+
+/* -----------checkbox--------------- */
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.checkbox__input {
+    appearance: none;
+
+    &:checked+.checkbox__icon {
+        background-color: $activ;
+        border-color: transparent;
+    }
+}
+
+.checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 36px;
+
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+        margin-left: 23px;
+    }
+
+    color: $color-text;
+}
+
+.checkbox__condition {
+    color: $activ;
+}
+
+.checkbox__icon {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+
+    @media screen and (max-width:1199px) {
+        left: 0;
+        top: 0;
+    }
+
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid $color-title;
+
+    transition: background-color $time $time-function,
+    border-color $time $time-function;
+}
