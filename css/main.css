@@ -7,7 +7,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*----- Прибирання крапки та лінії на тексті -----*/
+/*------------- прибирання крапки та лінії на тексті -----*/
 .list {
   list-style: none;
 }
@@ -17,7 +17,7 @@ body {
   text-decoration: none;
 }
 
-/* ---- Скидання стилів та встановлення меж макету ----*/
+/* ----скидання стилів та встановлення меж макету--------- */
 .container {
   min-width: 320px;
   padding: 0 15px;
@@ -1220,7 +1220,7 @@ button {
   border-radius: 4px;
 }
 @media screen and (max-width: 1199px) {
-  .model {
+  .modal {
     height: 95%;
     width: 95%;
     max-height: 609px;
@@ -1283,7 +1283,7 @@ button {
   margin-bottom: 20px;
 }
 
-.form__title {
+.form__titel {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -1401,7 +1401,7 @@ button {
   background-color: #188ce8;
 }
 
-/* ----- Checkbox ----- */
+/* -----------checkbox--------------- */
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;

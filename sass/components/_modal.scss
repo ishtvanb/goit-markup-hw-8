@@ -19,11 +19,11 @@
     overflow-y: scroll;
 }
 
-.backdrop.is-hidden .model {
+.backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(1turn);
 }
 
-.model {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +50,7 @@
         overflow: scroll;
     }
 
-    &__titel {
+    &__title {
         margin-bottom: 12px;
 
         font-weight: 700;
