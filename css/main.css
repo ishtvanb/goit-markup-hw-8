@@ -7,7 +7,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*------------- прибирання крапки та лінії на тексті -----*/
+/*----- Прибирання крапки та лінії на тексті -----*/
 .list {
   list-style: none;
 }
@@ -17,7 +17,7 @@ body {
   text-decoration: none;
 }
 
-/* ----скидання стилів та встановлення меж макету--------- */
+/* ---- Скидання стилів та встановлення меж макету ----*/
 .container {
   min-width: 320px;
   padding: 0 15px;
@@ -1196,12 +1196,12 @@ button {
   overflow-y: scroll;
 }
 
-.backdrop.is-hidden .model {
+.backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0) rotate(1turn);
           transform: translate(-50%, -50%) scale(0) rotate(1turn);
 }
 
-.model {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1228,7 +1228,7 @@ button {
     overflow: scroll;
   }
 }
-.model__titel {
+.modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1283,7 +1283,7 @@ button {
   margin-bottom: 20px;
 }
 
-.form__titel {
+.form__title {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -1401,7 +1401,7 @@ button {
   background-color: #188ce8;
 }
 
-/* -----------checkbox--------------- */
+/* ----- Checkbox ----- */
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
