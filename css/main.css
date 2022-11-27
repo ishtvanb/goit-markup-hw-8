@@ -1283,7 +1283,7 @@ button {
   margin-bottom: 20px;
 }
 
-.form__titel {
+.form__title {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -1401,7 +1401,7 @@ button {
   background-color: #188ce8;
 }
 
-/* -----------checkbox--------------- */
+/* ----- Checkbox ----- */
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
