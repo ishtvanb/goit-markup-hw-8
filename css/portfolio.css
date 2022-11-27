@@ -271,17 +271,24 @@ button {
 .header__link--activ {
   color: #2196f3;
 }
-.header__link--activ::after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
+@media screen and (max-width: 767px) {
+  .header__link--activ::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__link--activ::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 .header__contact {
@@ -780,17 +787,20 @@ button {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer__main {
-    padding-right: 165px;
+    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__main {
-    padding-right: 70px;
+    padding-right: 0;
+    margin-right: 0;
   }
 }
 

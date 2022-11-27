@@ -15,16 +15,18 @@
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
+        flex-wrap: nowrap;
     }
 }
 
 .footer__main {
     @media screen and (min-width: 768px) {
-        padding-right: 165px;
+        margin-right: 165px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-right: 70px;
+        padding-right: 0;
+        margin-right: 0;
     }
 }
 
