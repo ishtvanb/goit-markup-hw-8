@@ -1,5 +1,13 @@
 /* Form-modal */
- 
+
+.form-field {
+    display: flex;
+
+&__input::placeholder {
+    display: block;
+}
+}
+
 .feedback {
     display: block;
     width: 448px;

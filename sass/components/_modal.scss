@@ -1,93 +1,70 @@
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: visible;
-    pointer-events: none;
-}
+/* Modal */
 
 .backdrop {
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-
     opacity: 1;
+    transition: opacity 250ms var(--transition-timing-function),
+        visibility 250ms var(--transition-timing-function);
 
-    transition: opacity $time $time-function;
-    overflow-y: scroll;
-}
+    &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(1turn);
+    &.is-hidden__modal {
+    transform: translate(-50%, -50%) scale(1.3) rotate(360deg);
+    }
 }
 
 .modal {
     position: absolute;
+    text-align: center;
+    padding: 40px;
     top: 50%;
     left: 50%;
-
-    height: 581px;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
     width: 528px;
-
-    padding: 40px;
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform $time $time-function;
-
-    background-color: $up-white-background;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 581px;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: transform 250ms var(--transition-timing-function);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: #212121;
 
-    @media screen and (max-width: 1199px) {
-        height: 95%;
-        width: 95%;
-        max-height: 609px;
-        max-width: 450px;
-
-        overflow: scroll;
+    &-title {
+    margin: 0 0 12px;
     }
+} 
 
-    &__title {
-        margin-bottom: 12px;
-
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-    }
-}
-
-.close {
+.close-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 30px;
-    height: 30px;
-
+    top: 0;
+    right: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
-    color: #000000;
-    background-color: $up-white-background;
-
-    &:hover,
-    &:focus {
-        color: $activ;
-    }
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    background-color: var(--white-color);
+    transition: fill 250ms var(--transition-timing-function);
 }
 
-.close__icon {
-    width: 11px;
-    height: 11px;
-    fill: currentColor;
+.close-icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
 
-    transition: color $time $time-function;
+.close-button:hover,
+.close-button:focus {
+    fill: var(--accent-color);
 }
