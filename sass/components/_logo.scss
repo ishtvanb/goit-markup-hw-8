@@ -1,14 +1,80 @@
-/* Logo */
-
 .logo {
-    font-family: "raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+
+    color: $activ;
+
+    @media screen and (max-width:1199px) {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
 }
 
-.accent {
-    color: var(--primary-text-color);
+.header__logo {
+    display: inline-block;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width:767px) {
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+    }
+
+    &::after {
+        display: flex;
+
+        content: '';
+        width: 100%;
+        height: 1px;
+
+        background: $activ;
+
+        transform: scale(0);
+        transform-origin: left;
+        transition: transform $time $time-function;
+    }
+
+    &:hover::after {
+        transform: scale(1);
+    }
+}
+
+.web {
+    color: $logo-text;
+
+    &__footer {
+        color: $activ;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    color: $up-white-text;
+    display: inline-block;
+
+    &::after {
+        display: flex;
+
+        content: '';
+        width: 100%;
+        height: 1px;
+
+        background: $up-white-text;
+
+        transform: scale(0);
+        transform-origin: left;
+        transition: transform $time $time-function;
+    }
+
+    &:hover::after {
+        transform: scale(1);
+    }
 }

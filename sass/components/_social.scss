@@ -1,0 +1,38 @@
+.social {
+    display: flex;
+    gap: 10px;
+
+    justify-content: center;
+}
+
+.social__button {
+    width: 44px;
+    height: 44px;
+    background-color: $up-white-background;
+    color: $color-vector;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color $time $time-function, color $time $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $activ;
+        color: $up-white-text;
+        outline: none;
+    }
+
+    &--footer {
+        color: $up-white-text;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}

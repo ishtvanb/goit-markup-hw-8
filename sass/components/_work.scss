@@ -1,0 +1,44 @@
+.work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    padding-top: 0px;
+}
+
+.work__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+}
+
+.work__items {
+    display: flex;
+    gap: $card-set-gap;
+}
+
+.work__thumb {
+    position: relative;
+}
+
+.work__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $up-white-text;
+    background-color: rgba(47, 48, 58, 0.8);
+}

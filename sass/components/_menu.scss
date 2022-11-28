@@ -1,0 +1,102 @@
+// /------меню для телефону---------/
+.menu__container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    background-color: $up-white-background;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+
+        position: fixed;
+        z-index: 2;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        padding: 48px 40px;
+
+        &.js-menu-container {
+            overflow: hidden;
+            display: block;
+            transform: translateY(-100%);
+            transition: transform $time * 5 $time-function;
+        }
+
+        &.is-open {
+            display: flex;
+            overflow: auto;
+            flex-direction: column;
+            justify-content: space-between;
+            transform: translateY(0%);
+        }
+    }
+}
+
+.button__icon {
+    fill: currentColor;
+}
+
+.button__menu {
+    position: relative;
+    display: inline-flex;
+    background-color: $up-white-background;
+    color: $color-title;
+    transition: color $time $time-function;
+
+    &:focus,
+    &:hover {
+        color: $activ;
+    }
+
+    &--close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu__contact {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+// ---------соціальні сайти в меню
+.menu__social {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+
+        letter-spacing: 0.02em;
+    }
+}
+
+.menu__social--link {
+    color: $activ;
+    transition: color $time $time-function, background-color $time $time-function;
+
+    &:hover,
+    &:focus {
+        color: $up-white-text;
+        background-color: $activ;
+    }
+}
+
+.line {
+    color: rgba(33, 33, 33, 0.2);
+}
